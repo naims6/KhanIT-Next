@@ -3,24 +3,30 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #0271e8;
+  --text-color: #060606;
+  --border-radius: 8px;
+  
+  /* Font variables (these would be set by your next/font configuration) */
+  --font-inter: 'Inter', sans-serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary-color);
+  --color-text: var(--text-color);
+  --radius: var(--border-radius);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Universal css */
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  font-family: var(--font-inter);
+}
+
+/* Utility class */
+.font-dm-sans {
+  font-family: var(--font-dm-sans);
 }
