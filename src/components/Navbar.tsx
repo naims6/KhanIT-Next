@@ -53,7 +53,7 @@ export default function Navbar() {
             <div className="relative group">
               <button className="flex items-center gap-1 hover:text-[#0271E8] cursor-pointer">
                 Services
-                <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-200" />
+                <ChevronDown className="w-5 h-5 group-hover:rotate-180 transition-transform duration-200" />
               </button>
 
               <div className="absolute left-0 top-full mt-2 w-75 bg-white shadow-lg rounded-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform -translate-y-2 group-hover:translate-y-0">
@@ -124,9 +124,9 @@ export default function Navbar() {
               >
                 Services
                 {openMobileCategory ? (
-                  <ChevronUp className="w-5 h-5" />
+                  <ChevronUp className="w-8 h-8" />
                 ) : (
-                  <ChevronDown className="w-5 h-5" />
+                  <ChevronDown className="w-8 h-8" />
                 )}
               </button>
 
