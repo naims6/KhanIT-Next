@@ -1,5 +1,5 @@
-import { WhyChooseUs } from "@/types";
 import Image from "next/image";
+import { WhyChooseUs } from "@/types";
 import { Service } from "@/types";
 import { Stat } from "@/types";
 

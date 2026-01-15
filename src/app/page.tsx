@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Background />
       <Navbar />
-      <main>
+      <main className="min-h-screen relative">
         <Hero />
         <Services />
         <WhyChooseUs />

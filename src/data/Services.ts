@@ -1,5 +1,4 @@
-import { Service } from "@/types/Service";
-
+import { Service } from "@/types";
 export const servicesData: Service[] = [
   {
     title: "SEO Service",

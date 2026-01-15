@@ -1,4 +1,4 @@
-import { WhyChooseUs } from "@/types/whyChooseUs";
+import { WhyChooseUs } from "@/types";
 
 export const whyChooseData: WhyChooseUs[] = [
   {
