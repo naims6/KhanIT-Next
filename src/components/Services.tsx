@@ -2,7 +2,8 @@
 import { servicesData } from "@/data/Services";
 import Title from "./ui/Title";
 import Container from "./Container";
-import ServiceCard from "./ui/ServiceCard";
+import { ServiceCard } from "./ui/card";
+
 
 export default function Services() {
   return (

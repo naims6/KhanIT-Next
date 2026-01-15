@@ -1,7 +1,7 @@
 import { statsData } from "@/data/stats";
 import Container from "./Container";
 import Title from "./ui/Title";
-import StatsCard from "./ui/StatsCard";
+import StatsCard from "./ui/card";
 
 export default function Stats() {
   return (

@@ -1,7 +1,7 @@
 import { whyChooseData } from "@/data/whyChoseUs";
 import Container from "./Container";
-import WhyChooseUsCard from "./ui/WhyChooseUsCard";
 import Title from "./ui/Title";
+import { WhyChooseUsCard } from "./ui/card";
 
 export default function WhyChooseUs() {
   return (
