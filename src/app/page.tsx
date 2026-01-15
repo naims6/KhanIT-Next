@@ -1,4 +1,5 @@
 import Background from "@/components/bg/Background";
+import CTA from "@/components/CTA";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
@@ -15,6 +16,7 @@ export default function Home() {
         <Services />
         <WhyChooseUs />
         <Stats />
+        <CTA />
       </main>
     </>
   );

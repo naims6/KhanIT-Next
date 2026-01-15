@@ -23,7 +23,7 @@ export default function Title({
       <h2
         className={`${
           variant === "dark" && "text-white!"
-        } text-[#060606] font-bold text-5xl leading-14 font-dm-sans mt-6 mb-4`}
+        } text-[36px] leading-10.5 text-[#060606] font-bold lg:text-5xl lg:leading-14 font-dm-sans mt-6 mb-4`}
       >
         {title}
       </h2>

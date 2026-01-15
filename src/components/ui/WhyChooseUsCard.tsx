@@ -1,6 +1,5 @@
-import { WhyChooseUs } from "@/types/whyChooseUs";
+import { WhyChooseUs } from "@/types";
 import Image from "next/image";
-import React from "react";
 
 export default function WhyChooseUsCard({ item }: { item: WhyChooseUs }) {
   return (

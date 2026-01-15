@@ -1,6 +1,5 @@
-import { Stat } from "@/types/stats";
+import { Stat } from "@/types";
 import Image from "next/image";
-import React from "react";
 
 export default function StatsCard({ stat }: { stat: Stat }) {
   return (
