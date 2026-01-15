@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { whyChooseData } from "@/data/whyChoseUs";
 import Container from "./Container";
 import WhyChooseUsCard from "./ui/WhyChooseUsCard";
