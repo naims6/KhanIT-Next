@@ -14,6 +14,17 @@ export default function Navbar() {
   const [openMobileCategory, setOpenMobileCategory] = useState<string | null>(
     null
   );
+  const [isSubDropdownOpen, setIsSubDropdownOpen] = useState<string | null>(
+    null
+  );
+
+  const handleSubDropdownClick = (title: string) => {
+    if (isSubDropdownOpen === title) {
+      setIsSubDropdownOpen(null);
+      return;
+    }
+    setIsSubDropdownOpen(title);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -117,7 +128,9 @@ export default function Navbar() {
 
             <div>
               <button
-                className="flex items-center justify-between w-full text-left font-medium hover:text-blue-600"
+                className={`${
+                  openMobileCategory ? "text-blue-600!" : ""
+                } flex items-center justify-between w-full text-left font-medium hover:text-blue-600`}
                 onClick={() =>
                   setOpenMobileCategory(openMobileCategory ? null : "services")
                 }
@@ -134,20 +147,35 @@ export default function Navbar() {
                 <div className="px-4 mt-2">
                   {serviceCategories.map((category) => (
                     <div key={category.title} className="mb-2">
-                      <p className="py-2 text-sm font-medium text-gray-700">
-                        • {category.title}
+                      <p
+                        onClick={() => handleSubDropdownClick(category.title)}
+                        className={`${
+                          isSubDropdownOpen === category.title
+                            ? "text-blue-600"
+                            : "text-gray-700"
+                        } py-2 text-sm font-medium flex justify-between items-center`}
+                      >
+                        • {category.title}{" "}
+                        {isSubDropdownOpen === category.title ? (
+                          <ChevronUp />
+                        ) : (
+                          <ChevronDown />
+                        )}
                       </p>
-                      <div className="pl-3 space-y-1">
-                        {category.items.map((item) => (
-                          <Link
-                            key={item}
-                            href="#"
-                            className="block py-1 text-sm text-gray-600"
-                          >
-                            {item}
-                          </Link>
-                        ))}
-                      </div>
+                      {/* Subdropdown */}
+                      {isSubDropdownOpen === category.title && (
+                        <div className="pl-3 space-y-1">
+                          {category.items.map((item) => (
+                            <Link
+                              key={item}
+                              href="#"
+                              className="block py-1 text-sm text-gray-600"
+                            >
+                              {item}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
