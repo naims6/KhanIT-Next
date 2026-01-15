@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Menu, X, ChevronDown, ChevronUp, Phone } from "lucide-react";
 import { serviceCategories } from "@/data/navServices";
 import Container from "./Container";
+import Button from "./ui/Button";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -88,10 +89,10 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          <button className="hidden lg:flex primary-btn items-center gap-2">
+          <Button>
             <Phone className="w-5 h-5" />
             +8801404282727
-          </button>
+          </Button>
 
           <button
             className="lg:hidden text-2xl"
