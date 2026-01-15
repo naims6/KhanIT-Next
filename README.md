@@ -64,4 +64,4 @@ src/
 
 ## 🔗 Links
 
-- **Live Demo:** [Add your Vercel URL here]
+- **Live Demo:** https://khan-it-bd.vercel.app

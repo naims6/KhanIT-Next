@@ -4,7 +4,7 @@ export const servicesData: Service[] = [
     title: "SEO Service",
     description:
       "Improve Google rankings and gain consistent, long-term traffic.",
-    image: "Seo",
+    image: "seo",
     bgColor: "bg-[#F0F7FF]",
     active: true,
   },
