@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Khan IT",
     images: [
       {
-        url: "/assests/images/khanitsocial.png",
+        url: "/assets/images/khanitsocial.png",
         width: 1200,
         height: 630,
         alt: "Khan IT Digital Marketing Agency Bangladesh",
